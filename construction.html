@@ -1,0 +1,234 @@
+<html lang="en" style="height:100%;margin:0;padding:0">
+	<head>
+
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shit Saurav Says</title>
+
+	<script type="text/javascript">
+		document.ontouchmove = function (e) {
+ 		 e.preventDefault();
+		}
+	</script>
+
+
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <style type="text/css">
+
+
+        body {
+            background: purple;
+        }
+        .poop {
+            color: white;
+            font-size: 5vw;
+            font-family: Helvetica;
+            font-weight: 700;
+        } 
+        .new-shit {
+            background: none;
+            text-align: center;
+            font-size: 3vw;
+                min-width: 30vw;
+            max-width: 90vw;
+            border: none;
+            color: transparent;
+            text-shadow: 0 0 0 white;
+            resize: vertical;
+        }
+        .new-shit:focus {
+            outline: none;
+        }
+        ::-webkit-input-placeholder {
+            text-align: center;
+            color: rgba(0,0,0,0.3);
+            text-shadow: 0 0 0 transparent;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            text-align: center;  
+            color: rgba(0,0,0,0.3);
+            text-shadow: 0 0 0 transparent;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            text-align: center;  
+            color: rgba(0,0,0,0.3);
+            text-shadow: 0 0 0 transparent;
+        }
+
+        :-ms-input-placeholder {  
+            text-align: center; 
+            color: rgba(0,0,0,0.3);
+            text-shadow: 0 0 0 transparent;
+        }
+
+        .fade {
+            opacity: 0;
+            -webkit-transition: opacity 0.15s linear;
+            -moz-transition: opacity 0.15s linear;
+            -o-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+        }
+        .fade.in {
+            opacity: 1;
+            -webkit-transition: opacity 0.15s linear;
+            -moz-transition: opacity 0.15s linear;
+            -o-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+        }
+
+        .tfade {
+            opacity: 1;
+            -webkit-transition: opacity 2.0s linear;
+            -moz-transition: opacity 2.0s linear;
+            -o-transition: opacity 2.0s linear;
+            transition: opacity 2.0s linear;
+        }
+        .tfade.out {
+            opacity: 0;
+            -webkit-transition: opacity 2.0s linear;
+            -moz-transition: opacity 2.0s linear;
+            -o-transition: opacity 2.0s linear;
+            transition: opacity 2.0s linear;
+        }
+
+        .alert {
+            position: fixed;
+            left:50%;
+            width: 50vw;
+            margin-left: -25vw;
+            margin-top: 5vh;
+        }
+    </style>
+
+	</head>
+
+	<body style="height:100%;margin:0;padding:0;display:flex;align-items: center;">
+
+        
+            <div id="alertSuccess" class="col-6 alert alert-success fade" data-alert="alert" style="top:0">
+                  <a class="close" href="#">×</a>
+                  <center>
+                    <p>Submitted!</p>
+                  </center>
+            </div>
+            <div id="alertFail" class="col-6 alert alert-danger fade" data-alert="alert" style="top:0">
+                <a class="close" href="#">×</a>
+                <center>
+                    <p>Submission failed</p>
+                </center>
+            </div>
+
+
+
+
+		<div class="container" style="width: 100%">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="" style="text-align: center;">
+                        <center>
+                            <p class="poop tfade">#ShitSauravSays</p>
+                            <hr class="divider">
+                        </center>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <center>
+                        <form id="test-form">
+                            <input class="new-shit" type="text" name="new-shit" placeholder="Enter new shit"/>
+                        </form>
+                    </center>
+                <hr width="50%" />
+                </div>
+            </div>
+		</div>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="jquery.serialize-object.min.js"></script>
+
+    <script type="text/javascript">
+$( document ).ready(function(){
+    console.log("hello world");   
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwLRpBy7KER5QmwMsoysvBqOXcvDjILy4Qf7ycUuYHJy_XWHgQ/exec'
+
+
+        var idx=3;
+        var shitsaid;
+
+        function loadText(){
+            console.log(idx)
+                $(".poop").addClass("out").delay(2000).queue(function(){
+                    $(this).text(shitsaid[idx]).removeClass("out");
+                    $(this).dequeue();
+                });
+
+            idx = (idx + 1) % shitsaid.length; 
+            setTimeout(loadText, 10000)
+        }
+
+        var test = [{name: "new-shit", value: ""}];
+         $.ajax({
+            url:url,
+            method:"GET",
+            dataType:"json",
+            data: test
+            }).done(function(response){
+                console.log(response.data);
+                shitsaid = response.data;
+                loadText();
+            });
+       
+        $("#test-form").submit(function(e) {
+                console.log("Shit")
+                e.preventDefault();
+            var data = $form.serializeArray();
+            console.log(data)
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: data
+            }).done( function(data) {
+                console.log(data);
+                document.getElementById("test-form").reset();
+                $("#alertSuccess").addClass("in").delay(2000).queue(function(){
+                        $(this).removeClass("in");
+                        $(this).dequeue()
+                });
+            }).fail( function(data) {
+                document.getElementById("test-form").reset();
+                $("#alertFail").addClass("in").delay(2000).queue(function(){
+                    $(this).removeClass("in");
+                    $(this).dequeue()
+                });
+            });
+        });
+});
+    </script>
+
+
+
+    <script type="text/javascript">
+         
+    </script>
+
+
+
+
+
+	</body>
+</html>
