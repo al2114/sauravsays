@@ -170,7 +170,6 @@ $( document ).ready(function(){
         var shitsaid;
 
         function loadText(){
-            console.log(idx)
                 $(".poop").addClass("out").delay(2000).queue(function(){
                     $(this).text(shitsaid[idx]).removeClass("out");
                     $(this).dequeue();
@@ -203,7 +202,6 @@ $( document ).ready(function(){
                 dataType: "json",
                 data: data
             }).done( function(data) {
-                console.log(data);
                 document.getElementById("test-form").reset();
                 $("#alertSuccess").addClass("in").delay(2000).queue(function(){
                         $(this).removeClass("in");
