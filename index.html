@@ -200,14 +200,15 @@ $( document ).ready(function(){
                 url: url,
                 method: "GET",
                 dataType: "json",
-                data: data
+                data: data 
             }).done( function(data) {
                 document.getElementById("test-form").reset();
                 $("#alertSuccess").addClass("in").delay(2000).queue(function(){
                         $(this).removeClass("in");
                         $(this).dequeue()
+                shitsaid.splice(idx+1,0,data['entry'])
                 });
-            }).fail( function(data) {
+            }).fail( function(d) {
                 document.getElementById("test-form").reset();
                 $("#alertFail").addClass("in").delay(2000).queue(function(){
                     $(this).removeClass("in");
