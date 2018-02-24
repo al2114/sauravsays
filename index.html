@@ -195,7 +195,7 @@ $( document ).ready(function(){
                 console.log("Shit")
                 e.preventDefault();
             var data = $form.serializeArray();
-            console.log(data)
+            data[0]['value'] = data[0]['value'].toLowerCase()
             var jqxhr = $.ajax({
                 url: url,
                 method: "GET",
